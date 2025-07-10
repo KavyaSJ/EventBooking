@@ -11,13 +11,14 @@
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
     "format": "prettier --write src/",
-    "Server": "json-server --watch db.json --delay 2000 --port 3002",
+    "Start": "json-server --watch db.json --delay 2000 --port 3002",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "lucide-vue-next": "^0.525.0",
-    "vue": "^3.5.17"
+    "vue": "^3.5.17",
+    "json-server": "^0.17.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
@@ -29,7 +30,6 @@
     "eslint-plugin-vue": "~10.2.0",
     "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
-    "json-server": "^0.17.4",
     "npm-run-all2": "^8.0.4",
     "oxlint": "~1.1.0",
     "postcss": "^8.5.6",
