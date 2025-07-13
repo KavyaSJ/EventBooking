@@ -11,7 +11,7 @@
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
     "format": "prettier --write src/",
-    "start": "json-server --watch db.json --delay 2000 --port 3002",
+    "start": "json-server --host 0.0.0.0 --watch db.json --delay 2000 --port 3002",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
